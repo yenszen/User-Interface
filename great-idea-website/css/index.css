@@ -64,3 +64,57 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+body {
+	margin: 0 50px;
+}
+
+header {
+	padding: 30px 100px;
+	/* background: grey; */
+}
+
+header nav a {
+	color: silver;
+	padding: 20px 35px;
+	/* border: 5px solid black; */
+	text-decoration: none;
+}
+
+.logo {
+	float: right;
+}
+
+.top-div {
+	background: green;
+}
+
+.top-div span {
+	border: 1px solid black;
+	display: inline-block;
+	padding: 5px 30px;
+}
+
+.top-div img {
+	position: relative;
+	margin: 0 0 0 10px;
+	display: inline-block;
+}
+
+.top-section {
+	background: red;
+	display: inline-block;
+	column-count: 2;
+}
+
+.top-section p {
+	border: 5px solid black;
+	margin: 
+}
+
+.bottom-section {
+	background: orange;
+}
+
+footer {
+	background: pink;
+}
