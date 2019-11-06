@@ -66,22 +66,45 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 body {
 	margin: 0 100px;
+    font-family: 'Jomolhari', serif;
+    background-image: url(https://wallpaperaccess.com/full/941791.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: auto;
+    color: white;
 }
 
 header {
 	padding: 40px 0;
-	/* background: orange; */
+	background-color: lightslategray;
+	position: fixed;
+	width: calc(100% - 200px);
+	height: 80px;
+	z-index: 1;
 }
 
 header nav a {
-	color: grey;
+	color: white;
 	padding: 10px 25px;
 	text-decoration: none;
-	/* background-color: greenyellow; */
 }
 
 header nav a:first-child {
 	padding-left: 0;
+}
+
+@keyframes example {
+	from {color: white;}
+	to {color: gold;}
+
+	from {font-size: 1em;}
+	to {font-size: 1.5em;}
+}
+
+header nav a:hover {
+	animation-name: example;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; /* lets animation stay in its completed state and not revert to type */
 }
 
 header .logo {
@@ -91,62 +114,27 @@ header .logo {
 	margin-top: -20px;
 }
 
-.top-div {
-	/* background-color: lightblue; */
-	border-bottom: 2px solid black;
-	display: block;
-	height: 500px;
+article {
+    padding-top: 100px;
+    /* background-color: lightblue; */
 }
 
-.top-div h1 {
-	display: inline-block;
-	font-size: 80px;
-	/* background-color: green; */
-	height: 250px;
-	width: 350px;
-	text-align: center;
-	margin-top: 80px;
-	margin-left: 15%;
+article h3 {
+    text-align: center;
+    padding: 10px 0;
+    /* background-color: lime; */
 }
 
-.top-div span {
-	display: block;
-	height: 30px;
-	width: 150px;
-	padding: 5px 35px;
-	box-sizing: border-box;
-	border: 1px solid black;
-	margin-left: 25%;
-}
-
-.top-div img {
-	position: relative;
-	margin-left: 60%;
-	margin-top: -320px;
-}
-
-.top-section {
-	/* background: orange; */
-	display: inline-block;
-	column-count: 2;
-	padding: 40px 0;
-}
-
-.middle-img {
-	display: block;
-	width: 100%;
-}
-
-.bottom-section {
-	/* background: lightblue; */
-	column-count: 3;
-	padding: 40px 0;
+article p {
+    padding-bottom: 10px;
+    text-align: justify;
+    line-height: 1.25em;
 }
 
 footer {
 	/* background: orange; */
 	padding: 40px 0 100px;
-	border-top: 2px solid black;
+    border-top: 2px solid black;
 }
 
 footer span {

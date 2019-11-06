@@ -66,15 +66,20 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 body {
 	margin: 0 100px;
+	font-family: 'Jomolhari', serif;
 }
 
 header {
 	padding: 40px 0;
-	/* background: orange; */
+	background-color: lightslategray;
+	position: fixed;
+	width: calc(100% - 200px);
+	height: 80px;
+	z-index: 1;
 }
 
 header nav a {
-	color: grey;
+	color: white;
 	padding: 10px 25px;
 	text-decoration: none;
 	/* background-color: greenyellow; */
@@ -82,6 +87,20 @@ header nav a {
 
 header nav a:first-child {
 	padding-left: 0;
+}
+
+@keyframes example {
+	from {color: white;}
+	to {color: gold;}
+
+	from {font-size: 1em;}
+	to {font-size: 1.5em;}
+}
+
+header nav a:hover {
+	animation-name: example;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; /* lets animation stay in its completed state and not revert to type */
 }
 
 header .logo {
@@ -96,6 +115,7 @@ header .logo {
 	border-bottom: 2px solid black;
 	display: block;
 	height: 500px;
+	padding-top: 50px;
 }
 
 .top-div h1 {
@@ -109,8 +129,9 @@ header .logo {
 	margin-left: 15%;
 }
 
-.top-div span {
+.top-div button {
 	display: block;
+	background-color: white;
 	height: 30px;
 	width: 150px;
 	padding: 5px 35px;
